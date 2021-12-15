@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="UI Total Text"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TextView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="casual"
+                android:gravity="center|center_horizontal"
+                android:text="InputText"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/ev_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <Button
+                android:id="@+id/btn_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4caf50"
+                android:text="Enter" />
+
+            <TextView
+                android:id="@+id/tv_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="Check Test"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_change"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="change"
+                android:textSize="24sp" />
+
+            <ToggleButton
+                android:id="@+id/tb_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton" />
+
+            <Switch
+                android:id="@+id/sw_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Switch" />
+
+            <CheckBox
+                android:id="@+id/cb_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CheckBox" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_print"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#673AB7"
+        android:text="Print!" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Result" />
+
+    <Button
+        android:id="@+id/btn_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:text="Log!" />
+
+    <Button
+        android:id="@+id/btn_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFEB3B"
+        android:text="Toast!" />
+
+    <Button
+        android:id="@+id/btn_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        android:text="Alert!" />
+
+    <ImageView
+        android:id="@+id/img_steak"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/steake" />
+
+</LinearLayout>
