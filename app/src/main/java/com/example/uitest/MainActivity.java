@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.graphics.Color;
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.OvalShape;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,6 +14,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -42,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
     // get CheckBox
     private CheckBox cb_change;
 
+    // get ImageView
+    private ImageView img_steak;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -172,5 +178,10 @@ public class MainActivity extends AppCompatActivity {
                 builder.show();
             }
         });
+
+        img_steak = findViewById(R.id.img_steak);
+        img_steak.setBackground(new ShapeDrawable(new OvalShape()));
+
+        img_steak.setClipToOutline(true);
     }
 }
